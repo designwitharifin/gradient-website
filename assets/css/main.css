@@ -105,6 +105,22 @@ section.hero .lines {
     .line {
         display: none;
     }
+
+    section.hero .text {
+        padding: 0;
+    }
+
+    section.hero .text h1 {
+        font-size: 32px;
+        line-height: 12px;
+        margin: 20px 0;
+    }
+
+    section.hero .lines {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+    }
 }
 
 
@@ -112,4 +128,6 @@ section.hero .lines {
     .line {
         display: none;
     }
+
+
 }
