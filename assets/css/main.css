@@ -1,0 +1,115 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Set a background image by replacing the URL below */
+body {
+    background: url('../img/gray-gradient-background.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: white;
+    background-color: black;
+}
+
+/* button */
+.btn {
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.btn.btn-outline-light {
+    border: 1px solid #FFFDB9;
+    color: #FFFDB9;
+}
+
+/* Navbar Section */
+nav {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.175em;
+}
+
+nav.navbar {
+    padding: 2.5rem 0;
+}
+
+.navbar a.nav-link {
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+
+section.hero .text {
+    padding: 20px 0;
+    font-family: 'Plus Jakarta Sans';
+}
+
+section.hero .text h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 438px;
+    min-width: 100px;
+    padding: 0 auto;
+    margin: 34px 0;
+}
+
+section.hero .text h1.sd {
+    margin-top: 0.5rem !important;
+}
+
+
+section.hero .text p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 387px;
+    min-width: 100px;
+    padding: 0 auto;
+    color: #C1C1C1;
+}
+
+section.hero .lines {
+    width: 70%;
+    height: 94px;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    width: 55px;
+    height: 2px;
+    left: 125px;
+    top: 250px;
+    background: #D9D9D9;
+}
+
+
+@media only screen and (min-width:1400px) {
+    .line {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .line {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .line {
+        display: none;
+    }
+}

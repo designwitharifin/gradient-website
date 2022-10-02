@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .line {
+            width: 70%;
+            height: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container .line span {
+            position: absolute;
+            font-size: 3rem;
+            line-height: 4.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="line">
+            <span>Now it’s new black</span>
+        </div>
+        <div class="line">
+            <span>and old gold</span>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script>
+        const tl = gsap.timeline();
+
+        tl.from(".line span", 1.8, {
+            y: 100,
+            ease: "power4.out",
+            delay: 1,
+            skewY: 7,
+            stagger: {
+                amount: 0.3
+            }
+        })
+    </script>
+</body>
+
+</html>

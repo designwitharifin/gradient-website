@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gradient test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- General CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<!-- <body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;"> -->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent static-top mb-5">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/brand.svg" alt="brand">
+        </a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class='bx bx-menu bx-sm'></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link me-5" href="#">Says</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-5" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Lesson</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 pb-2">
+                <div class="lines">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="text">
+                    <div class="lines">
+                        <h1>Now it’s new black</h1>
+                    </div>
+                    <div class="lines">
+                        <h1 class="sd">and old gold</h1>
+                    </div>
+                    <div class="lines">
+                        <p>And only now, only this time it is a whole now culture
+                            in very part of art and design</p>
+                    </div>
+                    <div class="lines">
+                        <a href="#" class="btn btn-outline-light mt-4">Tell me more</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="img__hero">
+                    <img src="assets/img/illustration.svg" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+<script>
+    const tl = gsap.timeline();
+    const prg = gsap.timeline();
+    const btn = gsap.timeline();
+    const lineHor = gsap.timeline();
+    const img = gsap.timeline();
+    const nav = gsap.timeline();
+
+    tl.from(".text h1", 1.8, {
+        y: 100,
+        ease: "power4.out",
+        delay: 0.1,
+        skewY: 7,
+        stagger: {
+            amount: 0.3
+        }
+    })
+
+    prg.from(".text p", 1.8, {
+        y: 200,
+        ease: "power4.out",
+        delay: 0.1,
+        skewY: 7,
+        stagger: {
+            amount: 0.3
+        }
+    })
+
+    btn.from(".btn", 1.8, {
+        y: 200,
+        ease: "power4.out",
+        delay: 0.1,
+        skewY: 7,
+        stagger: {
+            amount: 0.3
+        }
+    })
+
+    lineHor.from(".line", 1.8, {
+        y: 200,
+        ease: "power4.out",
+        delay: 0.1,
+        skewY: 7,
+        stagger: {
+            amount: 0.3
+        }
+    })
+
+    img.from(".img__hero img", 1.8, {
+        y: 200,
+        ease: "power4.out",
+        delay: 0.1,
+        skewY: 7,
+        stagger: {
+            amount: 0.3
+        }
+    })
+</script>
+</body>
+
+</html>
